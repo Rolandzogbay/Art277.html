@@ -4,8 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>My second Assignment</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    background: black;
+    text-align: Center;
+    letter-spacing: 5px;
+}
+.hero{
+    font-size: 40px;
+    color: gold;
+    word-spacing: 10px;
+}
+div{
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    position: relative;
+    -webkit-animation: myfirst 6s;/*Chrome,Safari, Opera*/
+    animation: myfirst 5s;
+    text-transform:capitalize;
+    border: 1px solid black;
+}
+/*Chrome, Safari,Opera*/
+@-webkit-keyframes myfirst{
+    from{background-color:brown;}
+    to{background-color:orange;}
+}
+/*Standard syntax*/
+@-webkit-keyframes myfirst{
+    from{background-color:brown;}
+    to{background-color:orange;}
+}
+h1{
+    margin: 0 10px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+ul{
+    margin: 10px 0 0 10px;
+}
+ul li{
+    font-family:  Georgia, 'Times New Roman', Times, serif;;
+    font-size: 20px;
+    margin: 0 40px;
+    color: white;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    background: black;
+    text-align: left;
+}
+#hero{
+    font-size: 20px;
+    color: gold;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+    </style>
 </head>
 <body>
     <div class="container">

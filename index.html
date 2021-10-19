@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My second Assignment</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    background: black;
+    text-align: Center;
+    letter-spacing: 5px;
+}
+.hero{
+    font-size: 40px;
+    color: gold;
+    word-spacing: 10px;
+}
+div{
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    position: relative;
+    -webkit-animation: myfirst 6s;/*Chrome,Safari, Opera*/
+    animation: myfirst 5s;
+    text-transform:capitalize;
+    border: 1px solid black;
+}
+/*Chrome, Safari,Opera*/
+@-webkit-keyframes myfirst{
+    from{background-color:brown;}
+    to{background-color:orange;}
+}
+/*Standard syntax*/
+@-webkit-keyframes myfirst{
+    from{background-color:brown;}
+    to{background-color:orange;}
+}
+h1{
+    margin: 0 10px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+ul{
+    margin: 10px 0 0 10px;
+}
+ul li{
+    font-family:  Georgia, 'Times New Roman', Times, serif;;
+    font-size: 20px;
+    margin: 0 40px;
+    color: white;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    background: black;
+    text-align: left;
+}
+#hero{
+    font-size: 20px;
+    color: gold;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-----Our header-->
+        <div class="header">
+            <h1 class="hero">Welcome to My website</h1>
+        </div>
+        <div>
+        <h1>hello</h1>
+        <ul type="square">
+            <li>reading  book</li>
+            <li>watching movies</li>
+            <li>programming language
+                <ul>
+                    <li>orange</li>
+                    <li>green</li>
+                    <li>white</li>
+                </ul>
+            </li>
+        </ul>
+    </div><hr>
+
+    <!---order and unordered list nested in a div tag------->
+    <div>
+        <h1>four things to expect in life:</h1>
+        <ul>
+            <li>love
+                <ol type="i">
+                    <li>happiness</li>
+                    <li>emotions</li>
+                </ol>
+            </li>
+            <li>hate
+                <ol type="i">
+                    <li>fear</li>
+                    <li>shame</li>
+                </ol>
+            </li>
+            <li>work 
+                <ol type="i">
+                    <li>jobs</li>
+                    <li>careers</li>
+                </ol>
+            </li>
+            <li>play
+                <ol type="i">
+                    <li>retirement</li>
+                    <li>recreation</li>
+                </ol>
+            </li>
+        </ul>
+    </div><hr>
+    <div>
+        <h1>list of items</h1>
+        <ul>
+            <!---creating a list elments ---->
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4
+                <ul>
+                    <!----creating a sub-list elements-->
+                    <li>sub-item 1</li>
+                    <li>sub-item 2</li>
+                    <li>sub-item 3
+                        <ul>
+                            <!---creating a sub-sub elements---->
+                            <li>sub-sub item 1</li>
+                            <li>sub-sub item 2</li>
+                            <li>sub-sub item 3
+                                <ul>
+                                    <!----- creating a sub-sub-sub nested elements-->
+                                    <li>sub-sub-sub item 1</li>
+                                    <li>sub-sub-sub item 2</li>
+                                    <li>sub-sub-sub item 3</li>
+                                    <li>sub-sub-sub item 4</li>
+                                </ul>
+                            </li>
+                            <li>sub-sub item 4</li>
+                        </ul>
+                        <li>sub-item 4</li>
+                </ul>
+            </li>
+            <li>item 5</li>
+            <li> item 6 </li>
+        </ul>
+    </div>
+    <hr>
+    <!------creating div content------->
+    <div>
+        <h1>Aircraft types</h1>
+        <ul>
+            <li>General Aviation(Piston-driven engines)
+                <ol>
+                    <li>single-engine aircraft
+                        <ol type="I">
+                            <li>tail wheel</li>
+                            <li>tricycle</li><br>
+                        </ol>
+                    </li>
+                    <li>dual-engine Aircraft
+                        <ol type="A">
+                            <li>wing-mounted engines</li>
+                            <li>push-pull fuselage-mounted engines</li>
+                        </ol>
+                    </li>
+                </ol>
+        </ul><br>
+        <ul>
+            <li>commercial aviation(jet engines)
+                <ol>
+                    <li>dual-engine aircraft
+                        <ol type="a">
+                            <li>wing-mounted engines</li>
+                            <li>fuselage-mounted engines</li><br>
+                        </ol>
+                    </li>
+                    <li>tri-engine Aircraft
+                        <ol type="i">
+                            <li>third engine in vertical stabilizer</li>
+                            <li>third engine in fuselage</li>
+                        </ol>
+                    </li>
+                </ol>
+                    </li>
+        </ul>
+    </div>
+    <!---- My footer content---->
+        <div class="footer">
+            <h1 id="hero">Copyright&copy; Reserved @Roland Zogbay</h1>
+        </div>
+    </div>
+</body>
+</html>
